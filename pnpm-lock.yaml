@@ -18,9 +18,6 @@ importers:
       '@microsoft/tsdoc':
         specifier: ^0.15.0
         version: 0.15.0
-      '@parcel/transformer-postcss':
-        specifier: ^2.12.0
-        version: 2.12.0(@parcel/core@2.12.0(@swc/helpers@0.5.13))
       '@types/css-modules':
         specifier: ^1.0.5
         version: 1.0.5

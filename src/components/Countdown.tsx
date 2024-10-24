@@ -39,23 +39,23 @@ const Countdown = ({ startAt }: StartingTime) => {
   }, [timeLeft]);
 
   return (
-    <div className={`${styles.countdown}`}>
-      <div>
-        <p>{daysLeft}</p>
-        <p>Days</p>
-      </div>
-      <div>
-        <p>{hoursLeft}</p>
-        <p>Hours</p>
-      </div>
-      <div>
-        <p>{minutesLeft}</p>
-        <p>Minutes</p>
-      </div>
-      <div>
-        <p>{secondsLeft}</p>
-        <p>Seconds</p>
-      </div>
+    <div className={`${styles.countdown} xxs:grid grid-cols-1 flex justify-evenly flex-row`}>
+    <div className="">
+      <p className="text-center">{daysLeft}</p>
+      <p className="text-center xxs: text-xs sm:text-sm">Days</p>
+    </div>
+    <div className="">
+      <p className="text-center">{hoursLeft}</p>
+      <p className="text-center xxs: text-xs sm:text-sm">Hours</p>
+    </div>
+    <div className="">
+      <p className="text-center">{minutesLeft}</p>
+      <p className="text-center xxs: text-xs sm:text-sm">Minutes</p>
+    </div>
+    <div className="">
+      <p className="text-center">{secondsLeft}</p>
+      <p className="text-center xxs: text-xs sm:text-sm">Seconds</p>
+    </div>
     </div>
   );
 };
