@@ -12,6 +12,7 @@ export default {
         xxs: ".125rem",
         xs: ".25rem",
         sm: ".312rem",
+        med:"0.4rem",
         base: "1rem",
         xl: "1.25rem",
         "2xl": "1.563rem",
