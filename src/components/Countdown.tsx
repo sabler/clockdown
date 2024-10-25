@@ -1,4 +1,3 @@
-import * as styles from "../css/modules/countdown.module.css";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -39,7 +38,7 @@ const Countdown = ({ startAt }: StartingTime) => {
   }, [timeLeft]);
 
   return (
-    <div className={`${styles.countdown} text-cyan-200 xxs:max-sm:grid grid-cols-1 gap-4 md:flex justify-center gap-4 flex-row`}>
+    <div className={`countdown text-cyan-200 xxs:max-sm:grid grid-cols-1 gap-4 md:flex justify-center gap-4 flex-row`}>
     <div className="">
       <p className="text-center">{daysLeft}</p>
       <p className="text-center xxs: text-sm md:text-med">Days</p>

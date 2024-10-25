@@ -12,3 +12,27 @@ body {
     padding: 0;
     
 }
+
+.countdown {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
+  }
+
+/* .mark {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: linear-gradient(to right, #ffe10000, #0022ff 31%, #ffe10000);
+    border-radius: 0.4em .3em;
+    margin: 0 -0em;
+    padding: .1em .4em;
+} */
+
+.critical {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: linear-gradient(to right, #ffe10000, #0022ff 15%, #ffe10000);
+    border-radius: 0.4em .3em;
+    margin: .1em -0.2em .1em -.4em;
+    padding: .1em .1em .2em .8em;
+}

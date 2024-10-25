@@ -21,3 +21,8 @@ export interface DurationObject {
 export interface StartingTime {
   startAt: string;
 }
+
+export interface HeadlineProps {
+  copy: string;
+  highlight?: boolean;
+}
