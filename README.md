@@ -1,3 +1,3 @@
 # clockdown
 
-Coundown to the 2024 U.S. Presidential Election
+Coundown to the 2024 U.S. Presidential Election. Please vote!
