@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "parcel build src/index.html --dist-dir build",
+    "build": "parcel build src/index.html --dist-dir build --no-source-maps",
     "start": "parcel src/index.html --no-cache"
   },
   "keywords": [],
