@@ -22,7 +22,7 @@ export interface StartingTime {
   startAt: string;
 }
 
-export interface HeadlineProps {
+export interface CopyProps {
   copy: string;
   highlight?: boolean;
 }
