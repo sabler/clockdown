@@ -12,10 +12,11 @@ body {
 }
 
 .paragraph {
-    width: 75cqw;
+  width: 75cqw;
 }
 
-.paragraph, .countdown {
+.paragraph,
+.countdown {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
@@ -26,18 +27,9 @@ body {
   overflow: hidden;
 }
 
-/* .mark {
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background: linear-gradient(to right, #ffe10000, #0022ff 31%, #ffe10000);
-    border-radius: 0.4em .3em;
-    margin: 0 -0em;
-    padding: .1em .4em;
-} */
-
 .stars {
-    width:100%;
-    height:50px;
+  width: 100%;
+  height: 50px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M100,10 L120.45,70.45 L180,70.45 L130,110 L150.9,170 L100,130 L49.1,170 L70,110 L20,70.45 L79.55,70.45 Z" fill="white" /></svg>');
   background-size: 50px 50px;
   background-repeat: repeat-x;
