@@ -1,16 +1,11 @@
-.countdown {
+/* .countdown {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 5rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  gap: 3cqw
-  
-}
+} */
 
-.countdown > div {
-  display: inline-block;
+/* .countdown > div {
+  display: block;
   min-width: 7cqw;
   max-width: 11cqw;
 
@@ -23,4 +18,6 @@
 .countdown > div > p:last-of-type {
   margin-top: 0;
   font-size: 1rem;
-}
+} */
+
+

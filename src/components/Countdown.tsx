@@ -1,9 +1,9 @@
-import * as styles from "../css/modules/countdown.module.css";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { calculateDuration } from "../modules/countdown";
 import { StartingTime } from "../types";
+import Stars from "./Stars";
 
 const Countdown = ({ startAt }: StartingTime) => {
   const [timeLeft, setTimeLeft] = useState("--:--:--");
@@ -18,9 +18,7 @@ const Countdown = ({ startAt }: StartingTime) => {
     let intervalId: NodeJS.Timeout;
 
     if (endTime.timeToStop > 0) {
-
       intervalId = setInterval(() => {
-      
         setTimeLeft(endTime.timeToStopFormatted);
         setDaysLeft(endTime.days.toString().padStart(2, "0"));
         setHoursLeft(endTime.hours.toString().padStart(2, "0"));
@@ -32,30 +30,33 @@ const Countdown = ({ startAt }: StartingTime) => {
           clearInterval(intervalId);
         }
       }, 1000);
-  
     }
     return () => clearInterval(intervalId);
-  
   }, [timeLeft]);
 
   return (
-    <div className={`${styles.countdown}`}>
-      <div>
-        <p>{daysLeft}</p>
-        <p>Days</p>
+    <div>
+      <Stars />
+
+      <div className="countdown text-cyan-200 xxs:max-sm:grid grid-cols-1 gap-4 md:flex justify-center gap-4 flex-row">
+        <div>
+          <p className="leading-3 text-center">{daysLeft}</p>
+          <p className="leading-3 text-center xxs: text-sm md:text-sm">Days</p>
+        </div>
+        <div>
+          <p className="leading-3 text-center">{hoursLeft}</p>
+          <p className="leading-3 text-center xxs: text-sm md:text-sm">Hours</p>
+        </div>
+        <div>
+          <p className="leading-3 text-center">{minutesLeft}</p>
+          <p className="leading-3 text-center xxs: text-sm md:text-sm">Minutes</p>
+        </div>
+        <div>
+          <p className="leading-3 text-center">{secondsLeft}</p>
+          <p className="leading-3 text-center xxs: text-sm md:text-sm">Seconds</p>
+        </div>
       </div>
-      <div>
-        <p>{hoursLeft}</p>
-        <p>Hours</p>
-      </div>
-      <div>
-        <p>{minutesLeft}</p>
-        <p>Minutes</p>
-      </div>
-      <div>
-        <p>{secondsLeft}</p>
-        <p>Seconds</p>
-      </div>
+      <Stars />
     </div>
   );
 };
